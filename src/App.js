@@ -28,7 +28,8 @@ function App() {
   return (
     // Contenedor pricipal que encierra absolutamente todo
     <section 
-      className={isDarkMode ? 'principal-container' : 'principal-container dark-mode'}
+    // className={isDarkMode ? 'principal-container' : 'principal-container dark-mode'}
+      className={isDarkMode ? 'principal-container dark-mode' : 'principal-container'}
       style={modeSelected ? {fontFamily:'Satisfy'} : {} }>       
       <MobileNavBar/>
       <Navbar/>      

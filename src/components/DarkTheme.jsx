@@ -7,7 +7,7 @@ function DarkTheme() {
 
   return (
     <i
-      className={isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-fire'}
+      className={isDarkMode ? 'fa-solid fa-fire' : 'fa-solid fa-moon'}
       onClick={toggleDarkMode}
     ></i>
   );

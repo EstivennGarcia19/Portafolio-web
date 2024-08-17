@@ -34,7 +34,7 @@ function Navbar() {
                 <article className='change-mode'>
                     <button onClick={changeMode}>
                         {/* <i className="fa-solid fa-wine-glass"></i> */}
-                        <i className={modeSelected ? 'fa-solid fa-dumbbell' : 'fa-solid fa-wine-glass'}></i>
+                        <i className={modeSelected ? 'fa-solid fa-masks-theater' : 'fa-solid fa-champagne-glasses'}></i>
                         <span>{modeSelected ? 'Mewing' : 'Elegante'}</span>
                     </button>
                 </article>

@@ -1,10 +1,12 @@
 import React from 'react'
 import DarkTheme from './DarkTheme'
 import { useMobileNav } from '../Context/MobileNavContext'
+import { useMode } from '../Context/ModeContext';
 
 export default function MobileNavBar() {
 
     const { isActiveNavMobile, toggleNavMobile } = useMobileNav();    
+    const {modeSelected, changeMode} = useMode() 
     
     return (
         <article className={isActiveNavMobile ? 'menu-mobile show' : 'menu-mobile'}>
@@ -21,7 +23,8 @@ export default function MobileNavBar() {
                 </li>
             </ul>
             <div className="change-mode-mobile">
-                <DarkTheme />                
+                <DarkTheme />  
+                <i className={modeSelected ? 'fa-solid fa-masks-theater' : 'fa-solid fa-champagne-glasses'} onClick={changeMode}></i>
             </div>
             <div className="close-menu">
                 <i className="fa-regular fa-circle-xmark" onClick={toggleNavMobile}></i>
