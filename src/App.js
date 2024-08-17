@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import AboutMe from './components/AboutMe'
-import Skills from './components/Skills'
+import Services from './components/Services'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
 import { useTheme } from './Context/ThemeContext';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useMode } from './Context/ModeContext'
+import MobileNavBar from './components/MobileNavBar'
 
 
 function App() {
@@ -28,12 +29,14 @@ function App() {
     // Contenedor pricipal que encierra absolutamente todo
     <section 
       className={isDarkMode ? 'principal-container' : 'principal-container dark-mode'}
-      style={modeSelected ? {fontFamily:'Satisfy'} : {} }> 
+      style={modeSelected ? {fontFamily:'Satisfy'} : {} }>       
+      <MobileNavBar/>
       <Navbar/>      
       <Hero/>  
-      <AboutMe/>  
+      <Services/>  
       <Projects/>
-      <Skills/>    
+      <Skills/>   
+
     </section>
   )
 }

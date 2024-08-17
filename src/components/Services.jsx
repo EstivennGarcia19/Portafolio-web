@@ -1,9 +1,9 @@
 import React from 'react'
-import AboutMeCard from './AboutMeCard'
+import ServiceCard from './ServiceCard'
 
-function AboutMe() {
+function Services() {
     return (
-        <section id='aboutMe'>
+        <section id='services'>
             <div className="container">
 
                 <article className='title' data-aos="fade-up">
@@ -15,24 +15,24 @@ function AboutMe() {
                     <p>Mi enfoque está en construir interfaces intuitivas y responsivas que no solo cautiven a los usuarios, sino que también brinden soluciones completas y efectivas.</p>
                 </article>                
                 
-                <AboutMeCard 
+                <ServiceCard 
                     title="Diseño UX"
                     text="Capas de crear interfaces atractivas y funcionales, enfocándome en la experiencia del usuario y en la estética visual."
                     icon="fa-solid fa-brush">
 
-                </AboutMeCard>
+                </ServiceCard>
 
-                <AboutMeCard
+                <ServiceCard
                     title="Desarrollo Backend"
                     text="Experto en lógica de programación para la resolución de problemas y en la gestión de bases de datos"
                     icon="fa-solid fa-database">
-                </AboutMeCard>
+                </ServiceCard>
 
-                <AboutMeCard
+                <ServiceCard
                     title="Desarrollo Frontend"
                     text="Convierto diseños en interfaces gráficas operativas, asegurando una integración eficaz entre la apariencia visual y la funcionalidad."
                     icon="fa-solid fa-laptop-code">
-                </AboutMeCard>
+                </ServiceCard>
 
 
             </div>
@@ -40,4 +40,4 @@ function AboutMe() {
     )
 }
 
-export default AboutMe
+export default Services

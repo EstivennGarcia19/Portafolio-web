@@ -2,47 +2,16 @@
 import React, { useState } from 'react';
 import DarkTheme from './DarkTheme';
 import { useMode } from '../Context/ModeContext';
+import { useMobileNav } from '../Context/MobileNavContext';
 
 function Navbar() {
 
-    // Estado del menu que se muestra en mobiles, que por defecto el estado es no mostrar
-    const [isActiveNavMobile, setIsActiveNavMobile] = useState(false)
+    const { changeMode, modeSelected } = useMode()
+    const { toggleNavMobile } = useMobileNav()
 
-    const toggleNavMobile = () => {
 
-        setIsActiveNavMobile(!isActiveNavMobile)
-    }
-
-    const {changeMode, modeSelected} = useMode()
-    
-    
     return (
         <nav className="navBar" data-aos="fade-down">
-            <article className={isActiveNavMobile ? 'menu-mobile show' : 'menu-mobile'}>
-                <h2>Menú</h2>
-                <ul>
-                    <li className='option'>
-                        <a href='#aboutMe'>Acerca de</a>
-                    </li>
-                    <li className='option'>
-                        <a href='#'>Servicios</a>
-                    </li>
-                    <li className='option'>
-                        <a href='#'>Tecnologias</a>
-                    </li>
-
-                </ul>
-                <div className="change-mode-mobile">
-                    <DarkTheme />
-                </div>
-                <div className="close-menu">
-                    <i className="fa-regular fa-circle-xmark" onClick={toggleNavMobile}></i>
-                </div>
-
-
-
-            </article>
-
             <div className='container'>
                 <article className='name-icon'>
                     <i className="fa-solid fa-code"></i>
@@ -50,13 +19,13 @@ function Navbar() {
                 </article>
                 <ul className='menu-options'>
                     <li className='option'>
-                        <a>Acerca de</a>
+                        <a href='#services'>Servicios</a>
                     </li>
                     <li className='option'>
-                        <a href='#'>Servicios</a>
+                        <a href='#projects'>Proyectos</a>
                     </li>
                     <li className='option'>
-                        <a href='#'>Tecnologias</a>
+                        <a href='#skills'>Habilidades</a>
                     </li>
                     <li className='dark-light-mode'>
                         <DarkTheme />

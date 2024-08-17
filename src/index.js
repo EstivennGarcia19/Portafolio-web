@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './Context/ThemeContext';
 import { ModeProvider } from './Context/ModeContext';
+import { MobileNavProvider } from './Context/MobileNavContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
@@ -12,7 +13,9 @@ root.render(
   // </React.StrictMode>
   <ThemeProvider>
     <ModeProvider>
+      <MobileNavProvider>
       <App />
+      </MobileNavProvider>
     </ModeProvider>
   </ThemeProvider>
 );

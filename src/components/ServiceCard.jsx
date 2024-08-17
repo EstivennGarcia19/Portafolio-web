@@ -1,8 +1,8 @@
 import React from 'react'
 
-function AboutMeCard({title, text, icon}) {
+function ServiceCard({title, text, icon}) {
     return (
-        <div className="about-card" data-aos="fade-up">
+        <div className="service-card" data-aos="fade-up">
 
             <article className='title-and-icon'>
                 <i className={icon}></i>
@@ -16,4 +16,4 @@ function AboutMeCard({title, text, icon}) {
     )
 }
 
-export default AboutMeCard
+export default ServiceCard

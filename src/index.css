@@ -39,6 +39,7 @@ code {
 }
 
 .principal-container {
+  position: relative;
   width: 100%;
   height: 100%;
   /* transition: background-color 0.3s ease, color 0.3s ease; */
@@ -150,7 +151,7 @@ code {
   position: fixed;
   width: 100%;
   height: 100vh;
-  top: -1000px;
+  top: -100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
   padding: 40px 30px;
@@ -385,12 +386,12 @@ code {
 }
 
 
-#aboutMe {
+#services {
   width: 100%;
   padding: 100px 0;
 }
 
-#aboutMe .title {
+#services .title {
   margin: 0 auto;
   text-align: center;
   color: var(--primary-color);
@@ -399,7 +400,7 @@ code {
   margin-bottom: 30px;
 }
 
-#aboutMe .description {
+#services .description {
   width: 50%;
   margin: 0 auto;
   font-size: 18px;
@@ -407,7 +408,7 @@ code {
   margin-bottom: 60px;
 }
 
-#aboutMe .about-card {
+#services .service-card {
   width: 80%;
   margin: 0 auto;
   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); */
@@ -424,7 +425,7 @@ code {
 
 }
 
-#aboutMe .about-card .title-and-icon {
+#services .service-card .title-and-icon {
   /* display: none; */
   display: flex;
   width: 50%;
@@ -432,23 +433,23 @@ code {
 
 }
 
-#aboutMe .about-card .title-and-icon .fa-solid {
+#services .service-card .title-and-icon .fa-solid {
   font-size: 40px;
   color: var(--primary-color);
   margin-bottom: 15px;
 }
 
-#aboutMe .about-card .title-and-icon span {
+#services .service-card .title-and-icon span {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 30px;
 }
 
-#aboutMe .about-card .text {
+#services .service-card .text {
   width: 50%;
 }
 
-#aboutMe .about-card .text p {
+#services .service-card .text p {
   width: 75%;
   font-size: 18px;
 }
@@ -723,11 +724,11 @@ code {
   background-color: var(--primary-color);
 }
 
-.principal-container.dark-mode #aboutMe .description {
+.principal-container.dark-mode #services .description {
   color: var(--dark-text);
 }
 
-.principal-container.dark-mode #aboutMe .about-card {
+.principal-container.dark-mode #services .service-card {
   background-color: var(--contraste-dark);
   color: var(--dark-text);
   box-shadow: none;
@@ -845,32 +846,32 @@ code {
     margin-top: 30px;
   }
 
-  .principal-container #aboutMe .description {
+  .principal-container #services .description {
     width: 100%;
   }
 
-  .principal-container #aboutMe .about-card {
+  .principal-container #services .service-card {
     width: 100%;
     flex-direction: column;
     padding: 60px 30px;
   }
 
-  #aboutMe .about-card .title-and-icon {
+  #services .service-card .title-and-icon {
     text-align: center;
 
   }
 
-  #aboutMe .about-card .title-and-icon span {
+  #services .service-card .title-and-icon span {
     font-size: 22px;
   }
 
-  #aboutMe .about-card .text {
+  #services .service-card .text {
     width: 100%;
     text-align: center;
     margin-top: 15px;
   }
 
-  #aboutMe .title {
+  #services .title {
     font-size: 23px;
   }
 
@@ -880,7 +881,7 @@ code {
 
 
 
-  #aboutMe .about-card .text p {
+  #services .service-card .text p {
     width: 100%;
     font-size: 16px;
   }
@@ -999,7 +1000,7 @@ code {
     padding-top: 60px;
   }
 
-  #aboutMe {
+  #services {
     padding: 0;
     padding-top: 60px;
   }
