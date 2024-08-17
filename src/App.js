@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import AboutMe from './components/AboutMe'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import { useTheme } from './Context/ThemeContext';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { useMode } from './Context/ModeContext'
+
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de las animaciones
+      easing: 'ease-in-out', // Efecto de aceleración
+      once: true, // Las animaciones solo se ejecutan una vez
+    });
+  }, []);
+
+  const { isDarkMode } = useTheme();
+  const { modeSelected } = useMode();
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // Contenedor pricipal que encierra absolutamente todo
+    <section 
+      className={isDarkMode ? 'principal-container' : 'principal-container dark-mode'}
+      style={modeSelected ? {fontFamily:'Satisfy'} : {} }> 
+      <Navbar/>      
+      <Hero/>  
+      <AboutMe/>  
+      <Projects/>
+      <Skills/>    
+    </section>
+  )
 }
 
-export default App;
+export default App
