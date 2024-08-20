@@ -42,6 +42,14 @@ function Projects() {
           languages={['css', 'html', 'bootstrap']}
           websiteUrl={projectsLinks.gym}
           />
+
+        <CardProject 
+          proImg="airport"
+          title="Landing page Distribuidora" 
+          descrip="Diseño de una landing page para de una distribuidora de mercancía y contricciones, utilizando CSS nativo con diseño responsivo para que se adapte a los dispositivos móviles."          
+          languages={['css', 'html']}
+          websiteUrl={projectsLinks.airport}
+          />
             
           
 

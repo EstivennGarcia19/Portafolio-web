@@ -8,8 +8,8 @@ export const socialMediaLinks = {
 
 export const projectsLinks = {
 
-    controlMoney: 'https://www.photoprepagos.com/',
+    controlMoney: 'https://controlmoney.moneycontrol.com.co/',
     withyou:'',
-    gym:'',
-    airport:''
+    gym:'https://estivenngarcia19.github.io/Gym-Page/',
+    airport:'https://estivenngarcia19.github.io/Transportista-Landing/'
 }
