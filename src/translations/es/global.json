@@ -1,0 +1,55 @@
+{
+    "navBar" : {
+        "services" : "Servicios",
+        "projects" : "Proyectos",
+        "skills" : "Habilidades"
+    },
+
+    "hero" : {
+        "welcome" : "Bienvenido",
+        "my-name" : "Soy Estiven",
+        "rol" : "Desarrollador web",
+        "btn-call-me" : "Contacto",
+        "cv" : "Descagar CV",
+        "description" : "Creo experiencias web modernas y elegantes que fusionan diseño impactante con un rendimiento excepcional.",
+        "social-media" : "Redes"
+    },
+
+    "services" : {
+        "title" : "Te ayudo ;)",
+        "description" : "Mi enfoque está en construir interfaces intuitivas y responsivas que no solo cautiven a los usuarios, sino que también brinden soluciones completas y efectivas.",
+        "title-ux" : "Diseño UX",
+        "title-back" : "Desarrollo Backend",
+        "title-front" : "Desarrollo Frontend",
+        "description-ux" : "Capas de crear interfaces atractivas y funcionales, enfocándome en la experiencia del usuario y en la estética visual.",
+        "description-back" : "Experto en lógica de programación para la resolución de problemas y en la gestión de bases de datos.",
+        "description-front" : "Convierto diseños en interfaces gráficas operativas, asegurando una integración eficaz entre la apariencia visual y la funcionalidad."
+
+    },
+
+    "projects" : {
+        "title" : "Proyectos",
+        "desc" : "Aquí encontrarás una muestra de mis proyectos personales, donde aplico mi creatividad y habilidades técnicas para resolver problemas y crear soluciones efectivas. Explora estos trabajos para ver cómo llevo mis ideas a la realidad",
+        "title-CM" : "Control de gastos",
+        "desc-CM" : "Aplicacion web para registrar y gestionar tus gastos diarios. Permite visualizar tus gastos por categoría y tener un control más claro sobre tu presupuesto personal.",
+        
+        "title-WY" :  "Geston de citas médicas",
+        "desc-WY" :  "Plataforma web desarrollada como parte de mi proyecto de graduación en el SENA. Permite a los usuarios registrarse, agendar, reprogramar y cancelar citas médicas de manera sencilla y eficiente.",
+
+        "title-GYM" :  "Landing page GYM",
+        "desc-GYM" :  "Diseño de una landing page para un gimnasio utilizando diversos componentes de Bootstrap. Este enfoque facilita el desarrollo al aprovechar los elementos predefinidos y la flexibilidad de Bootstrap para crear una página atractiva y funcional.",
+
+        "title-AP" :  "Landing page Distribuidora",
+        "desc-AP" :  "Diseño de una landing page para de una distribuidora de mercancía y contricciones, utilizando CSS nativo con diseño responsivo para que se adapte a los dispositivos móviles.",
+
+
+
+        "btn" : "Visitar!"
+
+    },
+
+    "skills" : {
+        "title": "Habilidades"
+    }
+        
+}

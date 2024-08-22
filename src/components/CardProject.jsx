@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 function CardProject({ proImg, title, descrip, languages = [], websiteUrl }) {
 
     
     const [isVisibleText, setIsVisibleText] = useState(false);
     const urlImg = `/media/project-img-${proImg}.png`;
+    const [t, i18n] = useTranslation("global");
     
     const showDescription = () => {
         
@@ -31,7 +33,7 @@ function CardProject({ proImg, title, descrip, languages = [], websiteUrl }) {
                 </span>
 
                 <div className="btn-and-langs">
-                    <a href={websiteUrl} target='_blanked'>Visitar</a>
+                    <a href={websiteUrl} target='_blanked'>{t("projects.btn")}</a>
                     <article className="languages">
 
                         {

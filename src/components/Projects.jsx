@@ -1,8 +1,11 @@
 import React from 'react'
 import CardProject from './CardProject'
 import {projectsLinks} from './Links'
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+
+  const [t, i18n] = useTranslation("global"); 
   return (
     <section id='projects'>
 
@@ -10,17 +13,17 @@ function Projects() {
 
         <article className='title-projects' data-aos="fade-up">
           <img src="/media/title-project-icon-front.png" alt="Projects"  loading='lazy'/>
-          <span>Projects</span>
+          <span>{t("projects.title")}</span>
         </article>
 
         <article className='text-project' data-aos="fade-up">
-          <p>Aquí encontrarás una muestra de mis proyectos personales, donde aplico mi creatividad y habilidades técnicas para resolver problemas y crear soluciones efectivas. Explora estos trabajos para ver cómo llevo mis ideas a la realidad</p>
+          <p>{t("projects.desc")}</p>
         </article>
 
         <CardProject 
-          proImg="controlMoney"
-          title="Control de gastos" 
-          descrip="Aplicacion web para registrar y gestionar tus gastos diarios. Permite visualizar tus gastos por categoría y tener un control más claro sobre tu presupuesto personal."
+          proImg="controlmoney"
+          title={t("projects.title-CM")}
+          descrip={t("projects.desc-CM")}
           languages={['laravel', 'mysql', 'bootstrap', 'js', 'css', 'html']}
           websiteUrl={projectsLinks.controlMoney}
           
@@ -28,8 +31,8 @@ function Projects() {
 
         <CardProject 
           proImg="withyou"
-          title="Gestion de citas medicas" 
-          descrip="Plataforma web desarrollada como parte de mi proyecto de graduación en el SENA. Permite a los usuarios registrarse, agendar, reprogramar y cancelar citas médicas de manera sencilla y eficiente."
+          title={t("projects.title-WY")}
+          descrip={t("projects.desc-WY")}
           languages={['php', 'mysql', 'bootstrap', 'js', 'css', 'html']}
           websiteUrl={projectsLinks.withyou}
           
@@ -37,16 +40,16 @@ function Projects() {
 
         <CardProject 
           proImg="gympage"
-          title="Landing page GYM" 
-          descrip="Diseño de una landing page para un gimnasio utilizando diversos componentes de Bootstrap. Este enfoque facilita el desarrollo al aprovechar los elementos predefinidos y la flexibilidad de Bootstrap para crear una página atractiva y funcional."          
+          title={t("projects.title-GYM")}
+          descrip={t("projects.desc-GYM")}          
           languages={['css', 'html', 'bootstrap']}
           websiteUrl={projectsLinks.gym}
           />
 
         <CardProject 
           proImg="airport"
-          title="Landing page Distribuidora" 
-          descrip="Diseño de una landing page para de una distribuidora de mercancía y contricciones, utilizando CSS nativo con diseño responsivo para que se adapte a los dispositivos móviles."          
+          title={t("projects.title-AP")} 
+          descrip={t("projects.desc-AP")}          
           languages={['css', 'html']}
           websiteUrl={projectsLinks.airport}
           />

@@ -1,0 +1,58 @@
+{
+    "navBar" : {
+        "services" : "Services",
+        "projects" : "Projects",
+        "skills" : "Skills"
+    },
+
+    
+    "hero" : {
+        "welcome" : "Welcome",
+        "my-name" : "I'm Estiven",
+        "rol" : "Web developer",
+        "btn-call-me" : "Hire me",
+        "cv" : "See Cv",
+        "description" : "I create modern, elegant web experiences that fuse stunning design with exceptional performance.",
+        "social-media" : "Follow me"        
+    },
+    
+    "services" : {
+        "title" : "What do i help",
+        "description" : "My goal is to create intuitive and responsive interfaces that not only captivate users, but also provide complete and effective solutions.",
+        "title-ux" : "Website design",
+        "title-back" : "Backend developer",
+        "title-front" : "Frontend developer",
+        "description-ux" : "Layers of creating attractive and functional interfaces, focusing on user experience and visual aesthetics.",
+        "description-back" : "Expert in programming logic for problem solving and database management.",
+        "description-front" : "I convert designs into functional graphical interfaces, ensuring effective integration between visual appearance and functionality."
+
+    },
+
+    "projects" : {
+        "title" : "Projects",
+        "desc" : "Here you will find a sample of my personal projects, where I apply my creativity and technical skills to solve problems and create effective solutions. Explore these works to see how I bring my ideas to life.",
+        "title-CM" : "Expense control",
+        "desc-CM" : "Web application to record and manage your daily expenses. It allows you to view your expenses by category and have a clearer control of your personal budget.",
+        
+        "title-WY" :  "Medical appointment management",
+        "desc-WY" :  "Web platform developed as part of my degree project at SENA, which allows users to register, schedule, reschedule and cancel medical appointments in a simple and efficient way.",
+
+        "title-GYM" :  "GYM Landing page",
+        "desc-GYM" :  "Designing a landing page for a gym using various Bootstrap components. This approach makes development easier by leveraging Bootstrap's predefined elements and flexibility to create an attractive and functional page.",
+
+        "title-AP" :  "Landing page distributor",
+        "desc-AP" :  "Design of a landing page for a merchandise and construction distributor, using native CSS with responsive design to adapt to mobile devices.",
+
+
+
+        "btn" : "Go to site!"
+
+    },
+
+    "skills" : {
+        "title": "Skills"
+    }
+    
+    
+
+}

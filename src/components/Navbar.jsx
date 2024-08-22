@@ -3,11 +3,21 @@ import React, { useState } from 'react';
 import DarkTheme from './DarkTheme';
 import { useMode } from '../Context/ModeContext';
 import { useMobileNav } from '../Context/MobileNavContext';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
 
     const { changeMode, modeSelected } = useMode()
     const { toggleNavMobile } = useMobileNav()
+
+    const [t, i18n] = useTranslation("global");
+
+    const handleChangeLanguage = (lang = String) => {
+
+        i18next.changeLanguage(lang)    
+
+    }
 
 
     return (
@@ -19,19 +29,27 @@ function Navbar() {
                 </article>
                 <ul className='menu-options'>
                     <li className='option'>
-                        <a href='#services'>Servicios</a>
+                        <a href='#services'>{t("navBar.services")}</a>
                     </li>
                     <li className='option'>
-                        <a href='#projects'>Proyectos</a>
+                        <a href='#projects'>{t("navBar.projects")}</a>
                     </li>
                     <li className='option'>
-                        <a href='#skills'>Habilidades</a>
+                        <a href='#skills'>{t("navBar.skills")}</a>
                     </li>
                     <li className='dark-light-mode'>
                         <DarkTheme />
                     </li>
                 </ul>
                 <article className='change-mode'>
+
+                    <div className="change-language">
+                        <p>ES</p>
+                        <img src="media/lang-esp.png" onClick={() => handleChangeLanguage("es")} alt="" />
+                        <img src="media/lang-eng.png" onClick={() => handleChangeLanguage("en")} alt="" />
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
                     <button onClick={changeMode}>
                         {/* <i className="fa-solid fa-wine-glass"></i> */}
                         <i className={modeSelected ? 'fa-solid fa-masks-theater' : 'fa-solid fa-champagne-glasses'}></i>

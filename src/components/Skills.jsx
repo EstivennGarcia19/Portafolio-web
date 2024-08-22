@@ -1,13 +1,16 @@
 import React from 'react'
 import SkillCard from './SkillCard'
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
+
+    const [t, i18n] = useTranslation("global");
     return (
         <section id='skills'>
             <div className="container">
                 <article className="title" data-aos="flip-up">
                     <img src="/media/title-skill-icon-front.png" alt="" loading='lazy' />
-                    <h2>Skills</h2>
+                    <h2>{t("skills.title")}</h2>
                 </article>
 
 

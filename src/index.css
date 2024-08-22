@@ -118,7 +118,21 @@ code {
 
 }
 
+.navBar .change-mode {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
+.navBar .change-mode .change-language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBar .change-mode .change-language i {
+  font-size: 14px;
+}
 
 .navBar .change-mode button {
   border: 0;
@@ -802,6 +816,10 @@ code {
   left: -37px;
   top: -8px;
 
+}
+
+.principal-container.dark-mode .change-language {
+  color: #fff;
 }
 
 

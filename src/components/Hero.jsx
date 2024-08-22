@@ -1,35 +1,38 @@
 import React from 'react';
 import { useMode } from '../Context/ModeContext';
 import { socialMediaLinks } from './Links';
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
 
-  const { modeSelected } = useMode()
-  const lanitaRicaRhoades = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17d210ad-d7df-4953-bd00-756345ddbbd8/dfu7uil-3ce4a480-bac9-43d5-bce7-5cbdc4507b9f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3ZDIxMGFkLWQ3ZGYtNDk1My1iZDAwLTc1NjM0NWRkYmJkOFwvZGZ1N3VpbC0zY2U0YTQ4MC1iYWM5LTQzZDUtYmNlNy01Y2JkYzQ1MDdiOWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LwqYxN-SGXszgb9UWLM5iuACUhpg9Bpo5EMQfozM5PA'
+  const { modeSelected } = useMode()  
+
+  // Importamos esto para manejar los idiomas
+  const [t, i18n] = useTranslation("global");  
   return (
 
     <section id='hero'>
       <div className='container'>
         <article className='info-details'>
-          <span className='title-welcome'>Bienvenido</span>
-          <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Soy Estiven <br /> Desarrollador Web</h1>
+          <span className='title-welcome'>{t('hero.welcome')}</span>
+          <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">{t("hero.my-name")}<br /> {t("hero.rol")}</h1>
 
           <div className="hero-btns">
 
             <a href={socialMediaLinks.linkedin} target='_blank' data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400" className='btn-call-me'>
               <i className="fa-solid fa-paper-plane"></i>
-              <span>Contacto</span>              
+              <span>{t("hero.btn-call-me")}</span>              
             </a>
 
-            <a href="assets/estivenngarcia_cv.pdf" target='_blank' className="my-cv">Descargar CV</a>
+            <a href="assets/estivenngarcia_cv.pdf" target='_blank' className="my-cv">{t("hero.cv")}</a>
           </div>
 
           <div className='information' data-aos="fade-left" data-aos-easing="ease" data-aos-delay="400">
-            <p className='hero-text'>Creo experiencias web modernas y elegantes que fusionan diseño impactante con un rendimiento excepcional.</p>
+            <p className='hero-text'>{t("hero.description")}</p>
           </div>
 
           <article className='social-media'>
-            <span>Redes:</span>
+            <span>{t("hero.social-media")}</span>
             <div className='icons-social-media'>
               <article className='github'>
                 <a href={socialMediaLinks.github} target='_blank' rel="noopener noreferrer">

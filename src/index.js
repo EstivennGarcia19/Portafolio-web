@@ -6,18 +6,38 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './Context/ThemeContext';
 import { ModeProvider } from './Context/ModeContext';
 import { MobileNavProvider } from './Context/MobileNavContext';
+// Languages
+import global_es from './translations/es/global.json'
+import global_en from './translations/en/global.json'
+import i18next from 'i18next';
+import { I18nextProvider } from 'react-i18next';
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  lng: "en",
+  resources: {
+    en: {
+      global: global_en
+    },
+    es: {
+      global: global_es
+    }
+  }
+})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <ThemeProvider>
-    <ModeProvider>
-      <MobileNavProvider>
-      <App />
-      </MobileNavProvider>
-    </ModeProvider>
-  </ThemeProvider>
+  <I18nextProvider i18n={i18next}>
+    <ThemeProvider>
+      <ModeProvider>
+        <MobileNavProvider>
+          <App />
+        </MobileNavProvider>
+      </ModeProvider>
+    </ThemeProvider>
+  </I18nextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
