@@ -130,6 +130,11 @@ code {
   gap: 10px;
 }
 
+.navBar .change-mode .change-language img {
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .navBar .change-mode .change-language i {
   font-size: 14px;
 }

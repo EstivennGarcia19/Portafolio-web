@@ -59,7 +59,7 @@ function Hero() {
           <aside className='decoration-cicle-one'><div className="circle"></div></aside>
           <aside className='decoration-cicle-two'><div className="circle"></div></aside>
           <div className='container-sexy-photo' data-aos="zoom-in">
-            <img src={modeSelected ? '/media/me2.png' : '/media/me-avatar.png'} alt="Foto del sexi programador" loading='lazy' />
+            <img src={modeSelected ? '/media/me-avatar-mewing2.png' : '/media/me-avatar.png'} alt="Foto del sexi programador" loading='lazy' />
           </div>
         </article>
       </div>

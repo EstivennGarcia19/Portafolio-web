@@ -24,9 +24,7 @@ export default function MobileNavBar() {
                 <li className='option'>
                     <a href='#skills'>{t("navBar.skills")}</a>
                 </li>
-                <li className='dark-light-mode'>
-                    <DarkTheme />
-                </li>
+               
             </ul>
             <div className="change-mode-mobile">
                 <DarkTheme />

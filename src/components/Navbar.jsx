@@ -5,6 +5,7 @@ import { useMode } from '../Context/ModeContext';
 import { useMobileNav } from '../Context/MobileNavContext';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import LanguageToggle from './LanguageToggle';
 
 function Navbar() {
 
@@ -12,12 +13,8 @@ function Navbar() {
     const { toggleNavMobile } = useMobileNav()
 
     const [t, i18n] = useTranslation("global");
+    
 
-    const handleChangeLanguage = (lang = String) => {
-
-        i18next.changeLanguage(lang)    
-
-    }
 
 
     return (
@@ -43,12 +40,7 @@ function Navbar() {
                 </ul>
                 <article className='change-mode'>
 
-                    <div className="change-language">
-                        <p>ES</p>
-                        <img src="media/lang-esp.png" onClick={() => handleChangeLanguage("es")} alt="" />
-                        <img src="media/lang-eng.png" onClick={() => handleChangeLanguage("en")} alt="" />
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
+                    <LanguageToggle></LanguageToggle>
 
                     <button onClick={changeMode}>
                         {/* <i className="fa-solid fa-wine-glass"></i> */}
