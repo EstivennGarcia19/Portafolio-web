@@ -13,13 +13,19 @@ function Hero() {
         <article className='info-details'>
           <span className='title-welcome'>Bienvenido</span>
           <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Soy Estiven <br /> Desarrollador Web</h1>
-          <a href={socialMediaLinks.whatsapp} target='_blank' data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400" className='btn-call-me'>
-            <i className="fa-solid fa-paper-plane"></i>
-            <span>Contacto</span>
-          </a>
+
+          <div className="hero-btns">
+
+            <a href={socialMediaLinks.linkedin} target='_blank' data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400" className='btn-call-me'>
+              <i className="fa-solid fa-paper-plane"></i>
+              <span>Contacto</span>              
+            </a>
+
+            <a href="assets/estivenngarcia_cv.pdf" target='_blank' className="my-cv">Descargar CV</a>
+          </div>
 
           <div className='information' data-aos="fade-left" data-aos-easing="ease" data-aos-delay="400">
-            <p>Creo experiencias web modernas y elegantes que fusionan diseño impactante con un rendimiento excepcional.</p>
+            <p className='hero-text'>Creo experiencias web modernas y elegantes que fusionan diseño impactante con un rendimiento excepcional.</p>
           </div>
 
           <article className='social-media'>
@@ -49,8 +55,8 @@ function Hero() {
         <article className='sexy-photo'>
           <aside className='decoration-cicle-one'><div className="circle"></div></aside>
           <aside className='decoration-cicle-two'><div className="circle"></div></aside>
-          <div className='container-sexy-photo' data-aos="zoom-in">            
-            <img src={modeSelected ? '/media/lanarhoades.png' : lanitaRicaRhoades} alt="Foto del sexi programador" loading='lazy' />
+          <div className='container-sexy-photo' data-aos="zoom-in">
+            <img src={modeSelected ? '/media/me2.png' : '/media/me-avatar.png'} alt="Foto del sexi programador" loading='lazy' />
           </div>
         </article>
       </div>
