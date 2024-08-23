@@ -20,7 +20,7 @@ function Services() {
                 
                 <ServiceCard 
                     title={t("services.title-ux")}
-                    text={t("services.description")}
+                    text={t("services.description-ux")}
                     icon="fa-solid fa-brush">
 
                 </ServiceCard>
