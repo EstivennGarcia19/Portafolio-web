@@ -17,7 +17,7 @@ function CardProject({ proImg, title, descrip, languages = [], websiteUrl }) {
         <article className='card-project' data-aos="zoom-out-up" duration="2500">
 
             <div className="cont-img-project">
-                <img src={projImg} alt={projImg} />
+                <img src={projImg} alt={proImg} />
             </div>
 
             <div className="cont-info-project">

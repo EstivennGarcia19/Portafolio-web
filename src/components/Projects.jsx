@@ -24,7 +24,7 @@ function Projects() {
         </article>
 
         <CardProject 
-          proImg="controlmoney"
+          proImg="controlMoney"
           title={t("projects.title-CM")}
           descrip={t("projects.desc-CM")}
           languages={['laravel', 'mysql', 'bootstrap', 'js', 'css', 'html']}
