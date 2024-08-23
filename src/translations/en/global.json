@@ -43,6 +43,8 @@
         "title-AP" :  "Landing page distributor",
         "desc-AP" :  "Design of a landing page for a merchandise and construction distributor, using native CSS with responsive design to adapt to mobile devices.",
 
+        "read-more" : "Read more",
+        "read-less" : "Don't show",
 
 
         "btn" : "Go to site!"

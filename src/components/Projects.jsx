@@ -3,6 +3,9 @@ import CardProject from './CardProject'
 import {projectsLinks} from './Links'
 import { useTranslation } from 'react-i18next';
 
+// Images
+import iconTitle from '../media/title-project-icon-front.png';
+
 function Projects() {
 
   const [t, i18n] = useTranslation("global"); 
@@ -12,7 +15,7 @@ function Projects() {
       <div className="container">
 
         <article className='title-projects' data-aos="fade-up">
-          <img src="/media/title-project-icon-front.png" alt="Projects"  loading='lazy'/>
+          <img src={iconTitle} alt="Projects"  loading='lazy'/>
           <span>{t("projects.title")}</span>
         </article>
 

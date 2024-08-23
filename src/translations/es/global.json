@@ -42,6 +42,8 @@
         "title-AP" :  "Landing page Distribuidora",
         "desc-AP" :  "Diseño de una landing page para de una distribuidora de mercancía y contricciones, utilizando CSS nativo con diseño responsivo para que se adapte a los dispositivos móviles.",
 
+        "read-more" : "Leer mas",
+        "read-less" : "Ocultar",
 
 
         "btn" : "Visitar!"

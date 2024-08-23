@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import i18next from 'i18next';
 
+// Images
+import spanish from '../media/lang-esp.png'
+import english from '../media/lang-eng.png'
+
 function LanguageToggle() {
 
     const [currentLang, setCurrentLang] = useState("es")
@@ -18,7 +22,7 @@ function LanguageToggle() {
         <div className="change-language">
             <p>{currentLang === 'es' ? 'ES' : 'EN'}</p>
             {/* <img src="media/lang-esp.png" onClick={handleChangeLanguage} alt="" /> */}
-            <img src={currentLang === 'es' ? 'media/lang-esp.png' : 'media/lang-eng.png'} onClick={handleChangeLanguage} alt="" />
+            <img src={currentLang === 'es' ? spanish : english} onClick={handleChangeLanguage} alt="" />
 
             {/* <i class="fa-solid fa-chevron-down"></i> */}
             <i className={currentLang === 'es' ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-up'}></i>

@@ -1,6 +1,8 @@
 import React from 'react'
 import SkillCard from './SkillCard'
 import { useTranslation } from 'react-i18next';
+// Imgages
+import skillIcon from '../media/title-skill-icon-front.png'
 
 function Skills() {
 
@@ -8,8 +10,8 @@ function Skills() {
     return (
         <section id='skills'>
             <div className="container">
-                <article className="title" data-aos="flip-up">
-                    <img src="/media/title-skill-icon-front.png" alt="" loading='lazy' />
+                <article className="title" data-aos="flip-up">                    
+                    <img src={skillIcon} alt="" loading='lazy' />
                     <h2>{t("skills.title")}</h2>
                 </article>
 

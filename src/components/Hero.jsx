@@ -3,6 +3,10 @@ import { useMode } from '../Context/ModeContext';
 import { socialMediaLinks } from './Links';
 import { useTranslation } from 'react-i18next';
 
+// Images
+import avatar from "../media/me-avatar.png";
+import avatarMewing from "../media/me-avatar-mewing.png";
+
 function Hero() {
 
   const { modeSelected } = useMode()  
@@ -59,7 +63,8 @@ function Hero() {
           <aside className='decoration-cicle-one'><div className="circle"></div></aside>
           <aside className='decoration-cicle-two'><div className="circle"></div></aside>
           <div className='container-sexy-photo' data-aos="zoom-in">
-            <img src={modeSelected ? '/media/me-avatar-mewing2.png' : '/media/me-avatar.png'} alt="Foto del sexi programador" loading='lazy' />
+            {/* <img src={modeSelected ? '/media/me-avatar-mewing2.png' : '/media/me-avatar.png'} alt="Foto del sexi programador" loading='lazy' /> */}
+            <img src={modeSelected ? avatarMewing  : avatar} alt="Foto del sexi programador" loading='lazy' />
           </div>
         </article>
       </div>
