@@ -129,6 +129,7 @@ code {
   display: flex;
   align-items: center;
   gap: 10px;
+  user-select: none;
 }
 
 .navBar .change-mode .change-language img {
@@ -657,6 +658,8 @@ code {
 .card-project .cont-info-project .read-more {
   display: none;
   cursor: pointer;
+  margin-top: 20px;
+  user-select: none;
 }
 
 .card-project .cont-info-project p {
@@ -667,9 +670,7 @@ code {
 
 
 
-.card-project .cont-info-project .read-more {
-  margin-top: 20px;
-}
+
 
 .card-project .btn-and-langs {
   display: flex;
