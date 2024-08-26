@@ -22,9 +22,8 @@ function LanguageToggle() {
         <div className="change-language">
             <p>{currentLang === 'es' ? 'ES' : 'EN'}</p>
             {/* <img src="media/lang-esp.png" onClick={handleChangeLanguage} alt="" /> */}
-            <img src={currentLang === 'es' ? spanish : english} onClick={handleChangeLanguage} alt="" />
+            <img src={currentLang === 'es' ? spanish : english} onClick={handleChangeLanguage} alt="Bandera" />
 
-            {/* <i class="fa-solid fa-chevron-down"></i> */}
             <i className={currentLang === 'es' ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-up'}></i>
         </div>
     )

@@ -7,9 +7,8 @@ export const socialMediaLinks = {
 }
 
 export const projectsLinks = {
-
     controlMoney: 'https://controlmoney.moneycontrol.com.co/',
-    withyou:'',
+    withyou:'https://withyou.moneycontrol.com.co/',
     gym:'https://estivenngarcia19.github.io/Gym-Page/',
     airport:'https://estivenngarcia19.github.io/Transportista-Landing/'
 }
