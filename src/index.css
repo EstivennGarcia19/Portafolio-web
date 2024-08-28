@@ -9,12 +9,19 @@
 }
 
 :root {
-  /* --primary-color: #0f90e5; */
-  --primary-color: #8773EC;
+  /* --primary-color: #8773EC; */
+  /* --primary-color: #0f90e5; */ 
+  --primary-color: #14A1F0;
   --yellow-color: #FBDB68;
   --light-text: #393939;
+  --bg-services-card: #e3f3fd; /*Normal*/
+  /* --bg-services-card: #f0f8ff  Mas claro */
+  /* --bg-services-card: #d9ecfb Mas cosuro */
+  
+  
   /* Dark Theme */
-  --bg-dark-theme: #2a3543;
+  /* --bg-dark-theme: #2a3543; */
+  --bg-dark-theme: #0c151d;
   --dark-text: #d1d1d1;
   --contraste-dark: #333f4b;
 }
@@ -31,8 +38,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;  
 
 }
 
@@ -462,7 +468,7 @@ code {
   width: 80%;
   margin: 0 auto;
   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); */
-  background-color: #e7e0f3;
+  background-color: var(--bg-services-card);
   padding: 40px 50px;
   border-radius: 13px;
   display: flex;
@@ -521,6 +527,11 @@ code {
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
+}
+
+#skills .title i {
+  color: var(--primary-color);
+  font-size: 60px;
 }
 
 #skills .frontend-skills,
@@ -606,8 +617,9 @@ code {
   margin-bottom: 40px;
 }
 
-#projects .title-projects img {
-  width: 80px;
+#projects .title-projects i {
+  color: var(--primary-color);
+  font-size: 60px;
 }
 
 #projects .title-projects span {
@@ -947,6 +959,10 @@ code {
 
   }
 
+  #services .title h2 {
+    font-size: 30px;
+  }
+
   #services .service-card .title-and-icon span {
     font-size: 22px;
   }
@@ -962,7 +978,7 @@ code {
   }
 
   #projects .title-projects span {
-    font-size: 23px;
+    font-size: 30px;
   }
 
 
@@ -1035,10 +1051,13 @@ code {
   .card-project .cont-info-project .read-more {
     display: block;
   }
-
-  #skills .title {
-    font-size: 23px;
+  #skills .title i {
+    font-size: 45px;
   }
+  #skills .title h2{
+    font-size: 30px;
+  }
+
 
   #skills .cont-front-skills,
   #skills .cont-back-skills {
@@ -1235,6 +1254,10 @@ code {
 
   #projects {
     padding: 0;
+  }
+
+  #projects .title-projects i {
+    font-size: 45px;
   }
 
   #projects .text-project {
